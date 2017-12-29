@@ -1,16 +1,15 @@
 ---
 galaxy_info:
-  author: Kevin Brebanov
-  description: Installs and configures OpenVPN
+  author: Pedro Alvarez
+  description: Installs and configures OpenVPN raspbian
   company:
   license: BSD
   min_ansible_version: 1.9
   github_branch: master
   platforms:
-  - name: Ubuntu
+  - name: Debian
     versions:
-    - trusty
-    - xenial
+    - stretch
   galaxy_tags:
   - networking
 dependencies:
