@@ -4,4 +4,4 @@
   vars:
     openvpn_server: true
   roles:
-    - ansible-openvpn
+    - ansible-role-openvpn_raspbian
