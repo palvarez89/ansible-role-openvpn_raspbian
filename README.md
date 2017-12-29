@@ -1,9 +1,9 @@
-openvpn
-=======
+openvpn_raspbian
+================
 
-[![Build Status](https://travis-ci.org/kbrebanov/ansible-openvpn.svg?branch=master)](https://travis-ci.org/kbrebanov/ansible-openvpn)
+[![Build Status](https://travis-ci.org/palvarez89/ansible-role-openvpn_raspbian.svg?branch=master)](https://travis-ci.org/palvarez89/ansible-role-openvpn_raspbian)
 
-Installs and configures OpenVPN
+Installs and configures OpenVPN for Raspbian
 
 Requirements
 ------------
@@ -72,7 +72,7 @@ Role Variables
 Dependencies
 ------------
 
-- kbrebanov.easy_rsa (When using TLS)
+- palvarez89.easy_rsa3 (When using TLS)
 
 Example Playbook
 ----------------
@@ -84,7 +84,7 @@ Install OpenVPN server and use static key tunnel
     openvpn_server: true
     openvpn_secret: 'secret'
   roles:
-    - kbrebanov.openvpn
+    - palvarez89.openvpn_raspbian
 ```
 
 Install older version of OpenVPN server and use static key tunnel
@@ -95,7 +95,7 @@ Install older version of OpenVPN server and use static key tunnel
     openvpn_server: true
     openvpn_secret: 'secret'
   roles:
-    - kbrebanov.openvpn
+    - palvarez89.openvpn_raspbian
 ```
 
 Install OpenVPN client using static key tunnel
@@ -106,7 +106,7 @@ Install OpenVPN client using static key tunnel
     openvpn_secret: ''
     openvpn_remote_host: 'remote.vpn.com'
   roles:
-    - kbrebanov.openvpn
+    - palvarez89.openvpn_raspbian
 ```
 
 Install OpenVPN server using TLS and redirect all client traffic thru tunnel
@@ -116,7 +116,7 @@ Install OpenVPN server using TLS and redirect all client traffic thru tunnel
     openvpn_server: true
     openvpn_redirect_gateway: true
   roles:
-    - kbrebanov.openvpn
+    - palvarez89.openvpn_raspbian
 ```
 
 Install OpenVPN client using TLS
@@ -132,7 +132,7 @@ Install OpenVPN client using TLS
     openvpn_client_key: |
       client key contents
   roles:
-    - kbrebanov.openvpn
+    - palvarez89.openvpn_raspbian
 ```
 
 License
