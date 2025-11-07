@@ -46,7 +46,7 @@ Role Variables
 | openvpn_dev                   | tun                                                           | VPN device                                                                                             |
 | openvpn_comp_lzo              | true                                                          | Enable or disable compression                                                                          |
 | openvpn_daemon                | true                                                          | Run OpenVPN as a daemon                                                                                |
-| openvpn_dhcp_option_dns       | ["208.67.222.222", "208.67.220.220"]                          | DNS server addresses to push to client in TLS mode                                                     |
+| openvpn_dhcp_option_dns       | ["8.8.8.8", "1.1.1.1"]                          | DNS server addresses to push to client in TLS mode                                                     |
 | openvpn_ifconfig_pool_persist | ipp.txt                                                       | Persist/unpersist ifconfig-pool data to file                                                           |
 | openvpn_keepalive             | '10 60'                                                       | Set timeouts                                                                                           |
 | openvpn_nobind                | true                                                          | Do not bind to local address and port                                                                  |
