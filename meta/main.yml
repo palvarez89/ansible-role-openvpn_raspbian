@@ -9,8 +9,6 @@ galaxy_info:
   platforms:
   - name: Debian
     versions:
-    - stretch
+    - trixie
   galaxy_tags:
   - networking
-dependencies:
-  - { role: palvarez89.easy_rsa3, when: openvpn_server and not openvpn_static }

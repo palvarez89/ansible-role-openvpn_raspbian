@@ -6,18 +6,22 @@
   tags:
     - openvpn
 
-- include: CentOS.yml
+- include_tasks: CentOS.yml
   when: ansible_distribution == "CentOS"
   tags:
     - openvpn
 
-- include: Ubuntu.yml
+- include_tasks: Ubuntu.yml
   when: ansible_distribution == "Ubuntu"
   tags:
     - openvpn
 
-- include: Debian.yml
+- include_tasks: Debian.yml
   when: ansible_distribution == "Debian"
+  tags:
+    - openvpn
+
+- include_tasks: easy-rsa.yml
   tags:
     - openvpn
 
